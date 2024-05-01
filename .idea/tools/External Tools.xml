@@ -1,0 +1,16 @@
+<toolSet name="External Tools">
+  <tool name="scons" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="scons" />
+      <option name="PARAMETERS" value="dev_build=true" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="scons clean" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="scons" />
+      <option name="PARAMETERS" value="-c" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFIleDir$" />
+    </exec>
+  </tool>
+</toolSet>

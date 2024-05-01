@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8d6403b-4375-48d8-bd11-e7a12d0bdf36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/customTargets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/learning-godot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/tools/External Tools.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/LICENSE &amp; CREDITS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/fonts/PixelOperator8-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/fonts/PixelOperator8-Bold.ttf.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/fonts/PixelOperator8.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/fonts/PixelOperator8.ttf.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/music/time_for_adventure.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/music/time_for_adventure.mp3.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sounds/coin.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sounds/coin.wav.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sounds/explosion.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sounds/explosion.wav.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sounds/hurt.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sounds/hurt.wav.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sounds/jump.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sounds/jump.wav.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sounds/power_up.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sounds/power_up.wav.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sounds/tap.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sounds/tap.wav.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/coin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/coin.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/fruit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/fruit.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/knight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/knight.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/platforms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/platforms.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/slime_green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/slime_green.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/slime_purple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/slime_purple.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/world_tileset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/assets/sprites/world_tileset.png.import" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/scenes/player.gd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/scenes/player.tscn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/example.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/example.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/player.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/player.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/template.debug.gdextension.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/template.release.gdextension.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SConstruct" beforeDir="false" afterPath="$PROJECT_DIR$/SConstruct" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/bin/example.gdextension" beforeDir="false" afterPath="$PROJECT_DIR$/demo/bin/example.gdextension" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/demo/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/register_types.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/register_types.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="CompDBLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="learning-godot" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="learning-godot" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2024" />
+    <option name="minorVersion" value="1" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2fpIFHS0xEgfjc4X17QarMW7FnJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/home/stealthninja/projects/cpp/learning-godot/CMakeLists.txt",
+    "settings.editor.selected.configurable": "CLionExternalConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo/bin" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="CLionExternalRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning-godot" TARGET_NAME="debug build" CONFIG_NAME="debug build">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8d6403b-4375-48d8-bd11-e7a12d0bdf36" name="Changes" comment="" />
+      <created>1714491486676</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714491486676</updated>
+      <workItem from="1714491487938" duration="477000" />
+      <workItem from="1714491982843" duration="5198000" />
+      <workItem from="1714532622682" duration="2590000" />
+      <workItem from="1714535263034" duration="577000" />
+      <workItem from="1714535861058" duration="977000" />
+      <workItem from="1714536862572" duration="8654000" />
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

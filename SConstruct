@@ -11,7 +11,7 @@ def validate_parent_dir(key, val, env):
         raise UserError("'%s' is not a directory: %s" % (key, os.path.dirname(val)))
 
 
-libname = "EXTENSION-NAME"
+libname = "gdexample"
 projectdir = "demo"
 
 localEnv = Environment(tools=["default"], PLATFORM="")
@@ -50,8 +50,21 @@ env.Alias("compiledb", compilation_db)
 
 env = SConscript("godot-cpp/SConstruct", {"env": env, "customs": customs})
 
-env.Append(CPPPATH=["src/"])
-sources = Glob("src/*.cpp")
+def find_directories(directory):
+    directories=["src/"]
+    for root, dirs, files in os.walk(directory):
+        directories.extend(["src/"+ os.path.relpath(os.path.join(root, d), directory) + "/" for d in dirs])
+    return directories
+
+# env.Append(CPPPATH=["src/"])
+# sources = Glob("src/*.cpp")
+
+source_dirs = find_directories("/home/stealthninja/projects/cpp/learning-godot/src")
+env.Append(CPPPATH=source_dirs)
+
+sources = []
+for d in source_dirs:
+    sources.append(Glob(d + "*.cpp"))
 
 file = "{}{}{}".format(libname, env["suffix"], env["SHLIBSUFFIX"])
 
