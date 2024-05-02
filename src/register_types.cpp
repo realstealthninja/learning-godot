@@ -8,6 +8,8 @@
 #include "scripts/example.h"
 #include "scripts/player.h"
 
+#include "scripts/coin.h"
+
 using namespace godot;
 
 void initialize_gdextension_types(ModuleInitializationLevel p_level)
@@ -21,6 +23,7 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
 	//ClassDB::register_class<YourClass>();
 	ClassDB::register_class<example>();
     ClassDB::register_class<player>();
+    ClassDB::register_class<coin>();
 
 }
 

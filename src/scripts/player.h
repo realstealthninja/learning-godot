@@ -19,8 +19,8 @@ public:
     void _ready() override;
 
 private:
-    const float speed = 300.0f;
-    const float jump_velocity = -400.0f;
+    const float speed = 130.0f;
+    const float jump_velocity = -300.0f;
     float gravity;
 
 
