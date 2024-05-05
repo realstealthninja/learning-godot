@@ -1,3 +1,12 @@
+# Learning-godot
+
+This is a repository for a godot game I'm making by following
+the [brackeys tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) but instead of gdscript I wanted to make it purely as a gdextension feel free to check out the code and use it  however you'd like
+
+The template used is listed below! :D
+
+
+
 # godot-cpp template
 This repository serves as a quickstart template for GDExtension development with Godot 4.0+.
 
