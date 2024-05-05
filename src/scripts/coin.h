@@ -11,13 +11,12 @@ namespace godot {
         GDCLASS(coin, Area2D);
 
     protected:
-        static void _bind_methods() {};
+        static void _bind_methods();
 
     public:
         coin();
-        ~coin() = default;
 
-        void area_entered();
+        void on_coin_collect(Node2D* p_body);
     };
 
 } // godot

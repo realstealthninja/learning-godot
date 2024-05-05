@@ -13,19 +13,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8d6403b-4375-48d8-bd11-e7a12d0bdf36" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/scenes/coin.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/scenes/platform.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/scripts/player.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/coin.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/coin.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/scenes/killzone.tscn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/scripts/coin.gd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/killzone.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/killzone.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tools/External Tools.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tools/External Tools.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/bin/example.gdextension" beforeDir="false" afterPath="$PROJECT_DIR$/demo/bin/example.gdextension" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/scenes/coin.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/demo/scenes/coin.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/scenes/main.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/demo/scenes/main.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/scenes/player.gd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/scenes/player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/demo/scenes/player.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/register_types.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/register_types.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/coin.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/coin.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/coin.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/coin.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/player.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/player.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="CLionExternalRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning-godot" TARGET_NAME="debug build" CONFIG_NAME="debug build">
+    <configuration name="godot debug" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="learning-godot" TARGET_NAME="debug build" CONFIG_NAME="debug build">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
@@ -135,6 +135,8 @@
       <workItem from="1714536862572" duration="8654000" />
       <workItem from="1714549585361" duration="2556000" />
       <workItem from="1714555059474" duration="2630000" />
+      <workItem from="1714814527415" duration="5999000" />
+      <workItem from="1714836192509" duration="4181000" />
     </task>
     <servers />
   </component>

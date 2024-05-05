@@ -3,8 +3,6 @@
 
 
 #include <godot_cpp/classes/input.hpp>
-#include <godot_cpp/core/math.hpp>
-#include <godot_cpp/variant/utility_functions.hpp>
 #include <godot_cpp/classes/project_settings.hpp>
 
 namespace godot {

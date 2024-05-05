@@ -9,6 +9,7 @@
 #include "scripts/player.h"
 
 #include "scripts/coin.h"
+#include "scripts/killzone.h"
 
 using namespace godot;
 
@@ -24,6 +25,7 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
 	ClassDB::register_class<example>();
     ClassDB::register_class<player>();
     ClassDB::register_class<coin>();
+    ClassDB::register_class<killzone>();
 
 }
 
