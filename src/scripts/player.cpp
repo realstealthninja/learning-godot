@@ -1,5 +1,6 @@
 #include "player.h"
 #include "godot_cpp/classes/animated_sprite2d.hpp"
+#include "godot_cpp/classes/audio_stream_player2d.hpp"
 #include "godot_cpp/classes/engine.hpp"
 
 
@@ -20,13 +21,15 @@ namespace godot {
         auto velocity = get_velocity();
         auto input = Input::get_singleton();
 
-        auto direction = input->get_axis("ui_left", "ui_right");
+        auto direction = input->get_axis("move_left", "move_right");
 
         velocity.y += gravity * (float)delta;
 
 
-        if (input->is_action_just_pressed("ui_accept") && is_on_floor()) {
+        if (input->is_action_just_pressed("jump") && is_on_floor()) {
             velocity.y = jump_velocity;
+			audio->play();
+			sprite->play("jump");
         }
 
 
@@ -56,6 +59,7 @@ namespace godot {
 		}
 
 		sprite = get_node<AnimatedSprite2D>("AnimatedSprite2D");
+		audio = get_node<AudioStreamPlayer2D>("AudioStreamPlayer2D");
 
 
 

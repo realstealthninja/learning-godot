@@ -1,6 +1,7 @@
-[gd_scene load_steps=24 format=3 uid="uid://dd1dhodef82wj"]
+[gd_scene load_steps=26 format=3 uid="uid://dd1dhodef82wj"]
 
 [ext_resource type="Texture2D" uid="uid://b6jgly2ng4a8i" path="res://assets/sprites/knight.png" id="1_cgu2k"]
+[ext_resource type="AudioStream" uid="uid://cx3cfncnhpx1a" path="res://assets/sounds/jump.wav" id="2_ssxwb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lotf2"]
 atlas = ExtResource("1_cgu2k")
@@ -17,6 +18,10 @@ region = Rect2(64, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_isyod"]
 atlas = ExtResource("1_cgu2k")
 region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxy83"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(64, 160, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_igmkp"]
 atlas = ExtResource("1_cgu2k")
@@ -103,6 +108,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_hxy83")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_igmkp")
 }, {
 "duration": 1.0,
@@ -164,10 +177,13 @@ collision_layer = 2
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_41hjp")
-animation = &"run"
+animation = &"jump"
 autoplay = "idle"
-frame_progress = 0.275446
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -9)
 shape = SubResource("CircleShape2D_tmxd1")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_ssxwb")
+bus = &" SoundFx"
