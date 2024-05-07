@@ -5,11 +5,13 @@
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
 
+#include "scripts/game_manager.h"
 #include "scripts/example.h"
 #include "scripts/player.h"
 
 #include "scripts/coin.h"
 #include "scripts/killzone.h"
+#include "scripts/slime.h"
 
 using namespace godot;
 
@@ -26,6 +28,8 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
     ClassDB::register_class<player>();
     ClassDB::register_class<coin>();
     ClassDB::register_class<killzone>();
+	ClassDB::register_class<GameManager>();
+	ClassDB::register_class<slime>();
 
 }
 
