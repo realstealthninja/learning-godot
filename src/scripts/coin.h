@@ -3,6 +3,8 @@
 #ifndef LEARNING_GODOT_COIN_H
 #define LEARNING_GODOT_COIN_H
 
+#include "game_manager.h"
+#include "godot_cpp/classes/animation_player.hpp"
 #include <godot_cpp/classes/area2d.hpp>
 
 namespace godot {
@@ -17,6 +19,10 @@ namespace godot {
         coin();
 
         void on_coin_collect(Node2D* p_body);
+		void _ready() override;
+	private:
+		GameManager* manager = nullptr;
+		AnimationPlayer* player = nullptr;
     };
 
 } // godot
