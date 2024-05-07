@@ -27,23 +27,21 @@ namespace godot {
 
         if (input->is_action_just_pressed("ui_accept") && is_on_floor()) {
             velocity.y = jump_velocity;
-        	// add animation
         }
 
 
         if (direction > 0) {
-	  sprite->play("run");
-
-	  // set flip to false if player is going right
-	  sprite->set_flip_h(false);
+            sprite->play("run");
+			// set flip to false if player is going right
+			sprite->set_flip_h(false);
         } else if (direction < 0) {
-	  sprite->play("run");
-          // set flip to true if player is going left
-	  sprite->set_flip_h(true);
+			sprite->play("run");
+			// set flip to true if player is going left
+			sprite->set_flip_h(true);
         } else {
-	  // not any direction must be standing still
-	  sprite->play("idle");
-	}
+            // not any direction must be standing still
+			sprite->play("idle");
+		}
 
         velocity.x = (float) direction *  speed;
 
@@ -53,11 +51,11 @@ namespace godot {
 
     void player::_ready() {
         // run
-	if (Engine::get_singleton()->is_editor_hint()) {
-	    return;
-	}
+		if (Engine::get_singleton()->is_editor_hint()) {
+			return;
+		}
 
-	sprite = get_node<AnimatedSprite2D>("AnimatedSprite2D");
+		sprite = get_node<AnimatedSprite2D>("AnimatedSprite2D");
 
 
 

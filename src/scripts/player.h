@@ -25,12 +25,6 @@ private:
     float gravity;
 
     AnimatedSprite2D* sprite = nullptr;
-
-
-
-
-
-
 };
 
 } //namespace godot
