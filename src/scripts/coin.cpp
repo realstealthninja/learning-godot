@@ -15,7 +15,6 @@ namespace godot {
     }
 
     void coin::on_coin_collect(Node2D* p_body) {
-        UtilityFunctions::print("+1 coin");
         queue_free();
     }
 

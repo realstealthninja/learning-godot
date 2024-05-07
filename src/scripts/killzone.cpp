@@ -13,6 +13,7 @@ namespace godot {
     killzone::killzone() {
         connect("body_entered", Callable(this, "__on_body_entered"));
         timer = nullptr;
+
     }
 
     void killzone::_ready() {
@@ -24,7 +25,6 @@ namespace godot {
     }
 
     void killzone::__on_body_entered(godot::Node2D *body) {
-        UtilityFunctions::print("you died");
         body->get_node<CollisionShape2D>("CollisionShape2D")->queue_free();
         Engine::get_singleton()->set_time_scale(0.5);
         timer->start();
@@ -32,6 +32,6 @@ namespace godot {
 
     void killzone::_on_timer_timeout() {
         get_tree()->reload_current_scene();
-				Engine::get_singleton()->set_time_scale(1.0);
+        Engine::get_singleton()->set_time_scale(1.0);
     }
 } // godot

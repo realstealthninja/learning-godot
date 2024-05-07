@@ -2,6 +2,7 @@
 #define LEARNING_GODOT_PLAYER_H
 
 #include <godot_cpp/classes/character_body2d.hpp>
+#include <godot_cpp/classes/animated_sprite2d.hpp>
 
 namespace godot {
 
@@ -22,6 +23,12 @@ private:
     const float speed = 130.0f;
     const float jump_velocity = -300.0f;
     float gravity;
+
+    AnimatedSprite2D* sprite = nullptr;
+
+
+
+
 
 
 };

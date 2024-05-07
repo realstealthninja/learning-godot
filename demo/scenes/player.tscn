@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dd1dhodef82wj"]
+[gd_scene load_steps=24 format=3 uid="uid://dd1dhodef82wj"]
 
 [ext_resource type="Texture2D" uid="uid://b6jgly2ng4a8i" path="res://assets/sprites/knight.png" id="1_cgu2k"]
 
@@ -18,6 +18,70 @@ region = Rect2(64, 0, 32, 32)
 atlas = ExtResource("1_cgu2k")
 region = Rect2(96, 0, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_igmkp"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gorll"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_38f8g"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6ftx"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qq7e1"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(128, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ubb8a"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(160, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdasp"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(192, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxvuj"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(224, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqsac"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_howfm"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i0cs2"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ro0k"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iual2"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(128, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1incx"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(160, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvfsk"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(192, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7obj"]
+atlas = ExtResource("1_cgu2k")
+region = Rect2(224, 96, 32, 32)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_41hjp"]
 animations = [{
 "frames": [{
@@ -34,7 +98,60 @@ animations = [{
 "texture": SubResource("AtlasTexture_isyod")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_igmkp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gorll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_38f8g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n6ftx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qq7e1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ubb8a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vdasp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uxvuj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqsac")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_howfm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0cs2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ro0k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iual2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1incx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvfsk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7obj")
+}],
+"loop": true,
+"name": &"run",
 "speed": 10.0
 }]
 
@@ -47,7 +164,9 @@ collision_layer = 2
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_41hjp")
-autoplay = "default"
+animation = &"run"
+autoplay = "idle"
+frame_progress = 0.952605
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -9)

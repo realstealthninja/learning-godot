@@ -18,8 +18,10 @@ demo/bin/windows/*
 !demo/bin/*.gdextension
 .sconsign*.dblite
 
+
 # Ignore custom.py
 custom.py
+
 
 # Ignore generated compile_commands.json
 compile_commands.json
@@ -43,6 +45,7 @@ compile_commands.json
 *.exp
 
 # Other stuff
+.cache/
 *.log
 
 # VSCode
