@@ -4,9 +4,12 @@
 
 
 #include "godot_cpp/classes/animated_sprite2d.hpp"
+#include "godot_cpp/classes/animation_player.hpp"
 #include "godot_cpp/classes/node2d.hpp"
+#include "godot_cpp/classes/area2d.hpp"
 #include "godot_cpp/classes/ray_cast2d.hpp"
 #include "godot_cpp/classes/wrapped.hpp"
+#include "killzone.h"
 
 
 namespace godot {
@@ -15,7 +18,7 @@ class slime : public Node2D {
 	GDCLASS(slime, Node2D);
 
 	protected:
-	static void _bind_methods() {};
+	static void _bind_methods();
 
 	public:
 	slime();
@@ -23,6 +26,8 @@ class slime : public Node2D {
 	void _process(double delta) override;
 
 	void _ready() override;
+
+	void on_stomp(Node2D* body);
 
 
 	private:
@@ -33,9 +38,9 @@ class slime : public Node2D {
 	RayCast2D* right = nullptr;
 
 	AnimatedSprite2D* sprite = nullptr;
-
-
-
+	Area2D* stompzone = nullptr;
+	AnimationPlayer* player = nullptr;
+	killzone* zone = nullptr;
 };
 
 }

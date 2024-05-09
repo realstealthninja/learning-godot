@@ -1,13 +1,24 @@
 #include "slime.h"
 #include "godot_cpp/classes/animated_sprite2d.hpp"
+#include "godot_cpp/classes/animation_player.hpp"
+#include "godot_cpp/classes/area2d.hpp"
 #include "godot_cpp/classes/engine.hpp"
 #include "godot_cpp/classes/ray_cast2d.hpp"
+#include "godot_cpp/core/class_db.hpp"
+#include "godot_cpp/variant/callable.hpp"
+#include "godot_cpp/variant/utility_functions.hpp"
 #include "godot_cpp/variant/vector2.hpp"
+#include "killzone.h"
 
 
 namespace godot {
 
 	slime::slime() {
+
+	}
+
+	void slime::_bind_methods() {
+		ClassDB::bind_method(D_METHOD("on_stomp", "body"), &slime::on_stomp);
 
 	}
 
@@ -19,6 +30,11 @@ namespace godot {
 		right = get_node<RayCast2D>("RayCastRight");
 
 		sprite = get_node<AnimatedSprite2D>("AnimatedSprite2D");
+		stompzone = get_node<Area2D>("Area2D");
+		player = get_node<AnimationPlayer>("AnimationPlayer");
+		zone = get_node<killzone>("killzone");
+
+		stompzone->connect("body_entered", Callable(this, "on_stomp"));
 	}
 
 
@@ -41,6 +57,12 @@ namespace godot {
 		position.x += direction * speed * delta;
 		set_position(position);
 
+	}
+
+	void slime::on_stomp(Node2D* body) {
+		zone->queue_free();
+		set_physics_process(false);
+		player->play("death");
 	}
 
 }
