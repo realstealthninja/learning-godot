@@ -26,7 +26,7 @@ private:
     float gravity;
 
     AnimatedSprite2D* sprite = nullptr;
-	AudioStreamPlayer2D* audio = nullptr;
+	  AudioStreamPlayer2D* audio = nullptr;
 };
 
 } //namespace godot
