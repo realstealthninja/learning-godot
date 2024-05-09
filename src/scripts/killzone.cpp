@@ -1,4 +1,5 @@
 #include "killzone.h"
+#include "godot_cpp/classes/animated_sprite2d.hpp"
 #include <godot_cpp/variant/utility_functions.hpp>
 #include <godot_cpp/classes/scene_tree.hpp>
 #include <godot_cpp/classes/engine.hpp>
@@ -25,7 +26,8 @@ namespace godot {
     }
 
     void killzone::__on_body_entered(godot::Node2D *body) {
-        body->get_node<CollisionShape2D>("CollisionShape2D")->queue_free();
+				body->get_node<AnimatedSprite2D>("AnimatedSprite2D")->play("death");
+				body->set_physics_process(false);
         Engine::get_singleton()->set_time_scale(0.5);
         timer->start();
     }
