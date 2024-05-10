@@ -78,6 +78,9 @@ size = Vector2(8, 12)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wpy3u"]
 size = Vector2(6, 2)
 
+[sub_resource type="Animation" id="Animation_xh7ku"]
+length = 0.001
+
 [sub_resource type="Animation" id="Animation_cgams"]
 resource_name = "death"
 tracks/0/type = "method"
@@ -108,9 +111,6 @@ tracks/1/keys = {
 "method": &"play"
 }]
 }
-
-[sub_resource type="Animation" id="Animation_xh7ku"]
-length = 0.001
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lk3nr"]
 _data = {
