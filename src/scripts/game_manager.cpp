@@ -1,13 +1,16 @@
 #include "game_manager.h"
+#include "godot_cpp/classes/area2d.hpp"
 #include "godot_cpp/classes/engine.hpp"
 #include "godot_cpp/classes/label.hpp"
 #include "godot_cpp/classes/node.hpp"
 #include "godot_cpp/core/class_db.hpp"
+#include "godot_cpp/core/object.hpp"
+#include "godot_cpp/variant/callable.hpp"
 #include "godot_cpp/variant/node_path.hpp"
 #include "godot_cpp/variant/string.hpp"
-#include "godot_cpp/variant/variant.hpp"
 
 namespace godot {
+
 
     GameManager::GameManager() {
 
@@ -19,15 +22,17 @@ namespace godot {
         }
 
         scoreLabel = get_node<Label>("ScoreLabel");
-        finish_node = get_node<Node>(*finish);
+        finish_node = get_node<Area2D>("%Finish");
+        finish_node->connect("body_entered", Callable(this, "on_finish"));
 
     }
 
     void GameManager::_bind_methods() {
         ClassDB::bind_method(D_METHOD("add_points"), &GameManager::add_points);
-        ClassDB::bind_method(D_METHOD("get_finish"), &GameManager::get_finish);
-        ClassDB::bind_method(D_METHOD("set_finish", "finish"), &GameManager::set_finish);
-        ClassDB::add_property("Finish", PropertyInfo(Variant::NODE_PATH, "finish"), "set_finish", "get_finish");
+        ClassDB::bind_method(D_METHOD("on_finish", "body"), &GameManager::on_finish);
+        ClassDB::bind_method(D_METHOD("set_next_scene", "scene"), &GameManager::set_next_scene);
+        ClassDB::bind_method(D_METHOD("get_next_scene"), &GameManager::get_next_scene);
+        ADD_PROPERTY(PropertyInfo(Variant::STRING, "scene"), "set_next_scene", "get_next_scene");
     }
 
 
@@ -36,15 +41,16 @@ namespace godot {
         scoreLabel->set_text("You've\nCollected\n" + String::num_int64(score) + " coins!\n Congratulations!");
     }
 
-    NodePath* GameManager::get_finish() {
-        return finish;
-    };
-
-    void GameManager::set_finish(NodePath* _finish) {
-        finish = _finish;
+    void GameManager::on_finish(Node* body) {
+        get_tree()->change_scene_to_file(next_scene);
     }
 
+    void GameManager::set_next_scene(String scene) {
+        next_scene = scene;
+    };
 
-
+    String GameManager::get_next_scene() {
+        return next_scene;
+    }
 
 }

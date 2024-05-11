@@ -2,7 +2,9 @@
 #define LEARN_GODOT_GAME_MANAGER_H
 
 
+#include "godot_cpp/classes/area2d.hpp"
 #include "godot_cpp/classes/label.hpp"
+#include "godot_cpp/classes/scene_tree.hpp"
 #include <godot_cpp/classes/node.hpp>
 #include <godot_cpp/variant/node_path.hpp>
 
@@ -22,16 +24,16 @@ class GameManager : public Node {
 	void add_points();
 	void _ready() override;
 
-	NodePath* get_finish();
-	void set_finish(NodePath* finish);
+	void set_next_scene(String file);
+	String get_next_scene();
 
+	void on_finish(Node* body);
 
 	private:
 	int score{0};
+	String next_scene = "";
 	Label* scoreLabel = nullptr;
-	NodePath* finish = nullptr;
-	Node* finish_node = nullptr;
-
+	Area2D* finish_node = nullptr;
 };
 
 }
