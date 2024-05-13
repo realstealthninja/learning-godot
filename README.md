@@ -1,4 +1,6 @@
 # Learning-godot
+![Screenshot_2024-05-13_09-11-53](https://github.com/realstealthninja/learning-godot/assets/68815218/79578eb3-0c13-41ca-a14a-3cec08039ce4)
+
 
 This is a repository for a godot game I'm making by following
 the [brackeys tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) but instead of gdscript I wanted to make it purely as a gdextension feel free to check out the code and use it  however you'd like
