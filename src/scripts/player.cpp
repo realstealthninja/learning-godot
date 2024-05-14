@@ -2,6 +2,7 @@
 #include "godot_cpp/classes/animated_sprite2d.hpp"
 #include "godot_cpp/classes/audio_stream_player2d.hpp"
 #include "godot_cpp/classes/engine.hpp"
+#include "godot_cpp/classes/ray_cast2d.hpp"
 
 
 #include <godot_cpp/classes/input.hpp>
@@ -59,8 +60,5 @@ namespace godot {
         }
         sprite = get_node<AnimatedSprite2D>("AnimatedSprite2D");
         audio = get_node<AudioStreamPlayer2D>("AudioStreamPlayer2D");
-
-
-
     }
 } //namespace godot

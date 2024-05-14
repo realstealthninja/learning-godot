@@ -33,7 +33,7 @@ namespace godot {
     }
 
     void killzone::_on_timer_timeout() {
-        get_tree()->reload_current_scene();
         Engine::get_singleton()->set_time_scale(1.0);
+        get_tree()->reload_current_scene();
     }
 } // godot

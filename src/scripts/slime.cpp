@@ -6,7 +6,6 @@
 #include "godot_cpp/classes/ray_cast2d.hpp"
 #include "godot_cpp/core/class_db.hpp"
 #include "godot_cpp/variant/callable.hpp"
-#include "godot_cpp/variant/utility_functions.hpp"
 #include "godot_cpp/variant/vector2.hpp"
 #include "killzone.h"
 
@@ -30,15 +29,13 @@ namespace godot {
 		right = get_node<RayCast2D>("RayCastRight");
 
 		sprite = get_node<AnimatedSprite2D>("AnimatedSprite2D");
-		stompzone = get_node<Area2D>("Area2D");
 		player = get_node<AnimationPlayer>("AnimationPlayer");
 		zone = get_node<killzone>("killzone");
 
-		stompzone->connect("body_entered", Callable(this, "on_stomp"));
 	}
 
 
-	void slime::_process(double delta) {
+	void slime::_physics_process(double delta) {
 
 		if(Engine::get_singleton()->is_editor_hint()) {
 		return;
@@ -57,12 +54,6 @@ namespace godot {
 		position.x += direction * speed * delta;
 		set_position(position);
 
-	}
-
-	void slime::on_stomp(Node2D* body) {
-		zone->queue_free();
-		set_physics_process(false);
-		player->play("death");
 	}
 
 }

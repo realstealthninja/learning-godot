@@ -23,7 +23,7 @@ class slime : public Node2D {
 	public:
 	slime();
 
-	void _process(double delta) override;
+	void _physics_process(double delta) override;
 
 	void _ready() override;
 
@@ -38,7 +38,6 @@ class slime : public Node2D {
 	RayCast2D* right = nullptr;
 
 	AnimatedSprite2D* sprite = nullptr;
-	Area2D* stompzone = nullptr;
 	AnimationPlayer* player = nullptr;
 	killzone* zone = nullptr;
 };

@@ -212,8 +212,6 @@ position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_41hjp")
 animation = &"death"
 autoplay = "idle"
-frame = 3
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -9)
@@ -222,3 +220,7 @@ shape = SubResource("CircleShape2D_tmxd1")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_ssxwb")
 bus = &" SoundFx"
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(0, -9)
+target_position = Vector2(0, 7)
